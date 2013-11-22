@@ -1,0 +1,14 @@
+<section> 
+	<h3> docex.TextExtraction </h3>
+	<table>
+		<th> Keyword </th>
+		<th> Relevance </th>
+
+		<% @docex.keywords.each do |keyword| %>
+			<tr>
+				<td> <%= keyword["text"] %> </td>
+				<td> <%= (keyword["relevance"].to_f*100.0).to_s + "%" %> </td>
+			</tr>
+		<% end %>
+	</table>
+</section>
