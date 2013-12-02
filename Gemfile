@@ -46,3 +46,8 @@ end
 
 gem 'devise'
 gem 'alchemy-api-rb', :require => 'alchemy_api'
+gem "pry", "~> 0.9.12.4"
+gem 'rdf'
+gem 'rdf-spec' 
+gem 'rspec' 
+gem 'do_sqlite3'
