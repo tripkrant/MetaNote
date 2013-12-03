@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131203025507) do
+ActiveRecord::Schema.define(version: 20131203204841) do
+
+  create_table "articles", force: true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.text     "body"
+    t.datetime "extracted_on"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "keywords"
+    t.text     "relations"
+    t.text     "concepts"
+    t.string   "author"
+    t.string   "published"
+    t.string   "publication"
+  end
 
   create_table "docexes", force: true do |t|
     t.datetime "created_at"
