@@ -3,3 +3,4 @@ class Docex < ActiveRecord::Migration
   	add_column :docexes, :text, :keywords, :relations, :concepts
   end
 end
+
