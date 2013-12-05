@@ -29,12 +29,12 @@ ActiveRecord::Schema.define(version: 20131203204841) do
   end
 
   create_table "docexes", force: true do |t|
+    t.text     "keywords",   default: "--- []\n"
+    t.text     "textext",    default: "--- []\n"
+    t.text     "concepts",   default: "--- []\n"
+    t.text     "relations",  default: "--- []\n"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "keywords"
-    t.text     "relations"
-    t.text     "textext"
-    t.text     "concepts"
   end
 
   create_table "users", force: true do |t|
